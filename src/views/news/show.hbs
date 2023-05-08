@@ -1,0 +1,18 @@
+ <div id="header">
+    {{>header}}
+</div>
+<div class="mt-4 container">
+    <div class="row">
+        <div class="col-lg-3 mt-5">
+            <div>Tổng số video: 20</div>
+            <div class="mt-1 mb-2">Thời gian học: 05 giờ 30 phút</div>
+            <button class="btn btn-info">HỌC NGAY</button>           
+        </div>
+
+        <div class="col-lg-9">
+            <h2>{{new.name}}</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{new.videoId}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>{{new.description}}</p>
+        </div>
+    </div>
+</div>
